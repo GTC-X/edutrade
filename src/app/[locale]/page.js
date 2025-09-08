@@ -10,7 +10,8 @@ import IbAgendaSection from "./components/IBEvent"
 import MeetSpeakersSection from "./components/meetSpeakSection"
 import IbEventDetails from "./components/IbEventDetails"
 import IbCtaBanner from "./components/IBBanner"
-import EduTradeFooterBar from "./components/footer"
+import EduTradeFooterBar from "./components/Footer";
+
 const page = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -33,7 +34,7 @@ const page = () => {
             <MeetSpeakersSection />
             <IbEventDetails />
             <IbCtaBanner />
-            <EduTradeFooterBar />
+            <EduTradeFooterBar/>
             <SliderModalPrime setIsOpen={setIsOpen} isOpen={isOpen} />
         </>
     )
