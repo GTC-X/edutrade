@@ -10,13 +10,14 @@ import IbAgendaSection from "./components/IBEvent"
 import MeetSpeakersSection from "./components/meetSpeakSection"
 import IbEventDetails from "./components/IbEventDetails"
 import IbCtaBanner from "./components/IBBanner"
-import EduTradeFooterBar from "./components/footer"
+import EduTradeFooterBar from "./components/Footer";
+
 const page = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
-            <Meta title='Trusted Institutional Liquidity Provider | GTC Prime' description='Looking for a reliable institutional liquidity provider? GTC Prime delivers deep liquidity, ultra-fast execution & FIX API for brokers, funds & asset managers.' />
+            <Meta title='Edu.trade Introducing Brokers Growth Event 11th October 2025' description='Join Edu.trade at The Museum of the Future and discover how GCC Introducing Brokers can scale their business with exclusive events, insights, and opportunities.' />
             <EduTradeHero />
             <WhyAttendIBEvent setIsOpen={setIsOpen} />
             <EventFitSection setIsOpen={setIsOpen} />
@@ -33,7 +34,7 @@ const page = () => {
             <MeetSpeakersSection />
             <IbEventDetails />
             <IbCtaBanner />
-            <EduTradeFooterBar />
+            <EduTradeFooterBar/>
             <SliderModalPrime setIsOpen={setIsOpen} isOpen={isOpen} />
         </>
     )
