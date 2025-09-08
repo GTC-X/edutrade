@@ -1,0 +1,250 @@
+{
+    "Header": {
+    "logoAlt": "GTCFX",
+    "registerCta": "Register Now",
+    "bookCta": "Book a Meeting"
+  },
+   "partner": {
+    "meta": {
+      "title": "Become a GTC Partner in the Saudi Today",
+      "description": "Join GTC as a Partner in Saudi. Earn up to 80% in Rebates, offer top bonuses to traders, and grow with a regulated global broker."
+    },
+    "banner": {
+      "no": "80%",
+      "title": "in Rebates",
+      "para1": "Saudi’s Top Forex Partners Now Earn Up to",
+      "para2": "with GTC",
+      "para3": "Join a multi-regulated broker trusted worldwide. Your traders get a tradable bonus just for switching to us, plus you earn up to 80% in Rebates with fast payouts, multilingual support, and no setup costs.",
+      "btnText": "Get 80% in Rebates"
+    },
+    "layer": {
+      "column1": "Up to 80% in Rebates Paid On Demand",
+      "column2": "Become an FX Partner in Just a Few Clicks",
+      "column3": "Dynamic Leverage Up to 1:2000",
+      "column4": "Your Traders Get a Tradable Bonus",
+      "column5": "Full Marketing & Event Support Provided",
+      "column6": "Multi-Regulated Brokerage: SCA, FSC"
+    },
+    "comparisonTable": {
+      "title": "Here’s what your traders will get when you refer them to GTC",
+      "cta": "Refer Your Traders",
+      "colHeader1": "Feature",
+      "colHeader2": "Your Broker",
+      "col1": {
+        "point1": "Average EURUSD Spread",
+        "point2": "Leverage",
+        "point3": "Withdrawal Time",
+        "point4": "Scalping Rule",
+        "point5": "Slippage During News",
+        "point6": "Support Quality",
+        "point7": "Loyalty Rewards"
+      },
+      "col2": {
+        "point1": "3 pips",
+        "point2": "1:500",
+        "point3": "24 hours",
+        "point4": "3 minutes",
+        "point5": "Increased",
+        "point6": "Scripted replies",
+        "point7": "❌"
+      },
+      "col3": {
+        "point1": "0 pips",
+        "point2": "1:2000",
+        "point3": "Instant – 10 hours max",
+        "point4": "1 minute",
+        "point5": "Unchanged",
+        "point6": "Real human care",
+        "point7": "GTC VIP + Margin Bonus"
+      }
+    },
+    "payMore": {
+      "subtitle": "An FX Partnership Programme That",
+      "title": "Pays More Than Just Commission",
+      "intro": "Welcome to a partnership built for performance. At GTC, we don’t just give you up to 80% in Rebates; we give you the tools to grow your business.",
+      "outro": "From real trader bonuses to marketing support and instant payouts, this is the Forex partnership programme serious partners are switching to.",
+      "cta": "Partner with GTC",
+      "features": {
+        "feature1": {
+          "title": "Earn Up to 80% in Rebates",
+          "description": "No caps, no limits. Just real payouts you can count on."
+        },
+        "feature2": {
+          "title": "Tradeable Bonus for Your Traders",
+          "description": "Higher deposits, more volume, more commission for you."
+        },
+        "feature3": {
+          "title": "Events & Marketing Tools",
+          "description": "We’ll help you attract & convert more traders."
+        },
+        "feature4": {
+          "title": "Instant Commission Payouts",
+          "description": "Withdraw your partner earnings the moment they hit."
+        }
+      }
+    },
+    "broker": {
+      "heading": "A Broker You Can  Actually Trust",
+      "paragraph": "We’re not a fly-by-night operation. GTC is licensed and regulated in multiple respected jurisdictions. Here’s how we give you confidence to trade.",
+      "points": {
+        "p1": "Licensed by the UAE’s SCA, Mauritius' FSC, and South Africa's FSCA.",
+        "p2": "Headquartered in Dubai with nearly 1 million global traders.",
+        "p3": "World-class support with a real human touch.",
+        "p4": "Customer-first culture where service is strategy."
+      },
+      "bottomTitle": "Switch to a broker that doesn’t just say it, we prove it every day.",
+      "cta": "Start Earning"
+    },
+    "testimonials": {
+      "title": "What the Saudi’s FX Partners & Traders Are Saying",
+      "description": "Whether you’re a seasoned partner or just getting started, these partners made the switch and they or their traders haven’t looked back.",
+      "cta": "Join Us",
+      "list": {
+        "t1": {
+          "text": "“As an FX partner, getting up to 80% in Rebates and paid out instantly was a game changer. I moved my entire client book to GTC where they’re looked after.”",
+          "name": "Judi Izdihar Shamoon, Riyadh",
+          "stars": 5
+        },
+        "t2": {
+          "text": "“I run monthly trading classes in Saudi Arabia. GTC gave me banners, an LP, and real bonuses for my traders. The support is unreal!”",
+          "name": "Suoud Butrus Gaber, Jeddah",
+          "stars": 4
+        },
+        "t3": {
+          "text": "“My trading educator recommended GTC. I was sceptical at first, but now I see why he recommended them. The spreads, bonus, everything just works really well.”",
+          "name": "Kutaiba Abdul-Matin Awad, Dammam",
+          "stars": 5
+        },
+        "t4": {
+          "text": "“GTC doesn’t just talk, they deliver! I get paid on time, every time, and my traders are sticking around longer than ever. They also trade gold and GTC is great with them.”",
+          "name": "Yasser Nu'aym Bazzi, Riyadh",
+          "stars": 4
+        }
+      }
+    },
+    "growIB": {
+      "subtitle": "Start Earning More.",
+      "title": "Grow Your FX Partner Business with GTC",
+      "description1": "You’ve seen what GTC brings to the table. Now it’s your turn. Join the partnership programme that’s helping the Saudi’s FX partners scale faster, earn more, and build lasting trust with their traders.",
+      "description2": "Join us today, and your traders will thank you tomorrow.",
+      "cta": "Make the Switch"
+    },
+    "form": {
+      "heading": "Register Now",
+      "closeAlt": "Close the modal",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Mobile Number",
+      "country": "Country of Residence",
+      "otp": "OTP has been sent to given Email",
+      "getCode": "Get Code",
+      "sending": "Sending...",
+      "sendOtp": "Send OTP",
+      "verifyCode": "Verify Code",
+      "termsLabel": "Please accept the terms and conditions",
+      "termsText": "I confirm that I am over the age of 18, have read and agree to the ",
+      "conset": "I consent to GTC contacting me at reasonable times, and that my number is not on the Do Not Call Register (DNCR).",
+      "clientAgreement": "Client Agreement",
+      "privacyPolicy": "Privacy Policy",
+      "submit": "Submit Now",
+      "submitting": "Submitting...",
+      "otpSuccess": "Otp Verified Successfully!",
+      "otpFail": "Otp Verification Failed try again!",
+      "thankYou1": "Thank you for registering with GTC!",
+      "otpSent": "Otp sent successfully!",
+      "errors": {
+        "fullNameFormat": "Full name can only contain letters.",
+        "firstNameRequired": "First name is required",
+        "lastNameFormat": "Last name can only contain letters.",
+        "lastNameRequired": "Last name is required",
+        "emailInvalid": "Invalid email address",
+        "emailRequired": "Email is required",
+        "phoneRequired": "Phone number is required",
+        "countryRequired": "Country is required",
+        "otpLength": "OTP must be 6 digits",
+        "otpRequired": "OTP is required",
+        "termsRequired": "Please accept the terms and conditions"
+      },
+      "thankYou": "Thanks",
+      "almostThere": "You’re Almost There!",
+      "emailSent": "We’ve just sent you an email to {email}, which explains what happens next.",
+      "checkSpam": "It’s also a good idea to check your spam or junk folder as sometimes emails like to hide there. If the email we’ve sent you has made its way into your spam or junk folder, simply move it back into your inbox.",
+      "seeYou": "See you soon!",
+      "helpSection": {
+        "title": "Having trouble?",
+        "phoneLabel": "Contact us on",
+        "phone": "+971 800 667788",
+        "emailLabel": "or email the GTC Partnership Team at",
+        "email": "partners@gtcfx.com"
+      }
+    },
+    "thankYoumeta": {
+      "title": "Joining the GTC Partnership Programme Confirmation",
+      "description": "Welcome to a partnership built for performance. At GTC, we don’t just give you up to 80% in Rebates; we give you the tools to grow your business."
+    }
+  },
+  "home": {
+    "metaData": {
+      "title": "Switch To GTC & Benefit from a Brokerage that",
+      "description": "My name is Madhi, and I'm a Senior Business Development Manager here at GTC. I've been working in the Forex space for nearly two decades, and in that time, I've never worked for a brokerage that cares as much for its traders as GTC does."
+    },
+    "banner" : {
+        "topText": "Calling All Traders:",
+        "title": "Switch To GTC & Benefit from a Brokerage that",
+        "subtitle": "Actually Cares About You & Your Trading Account.",
+        "description": "My name is Madhi, and I'm a Senior Business Development Manager here at GTC. I've been working in the Forex space for nearly two decades, and in that time, I've never worked for a brokerage that cares as much for its traders as GTC does.",
+        "bottomText": "If you're serious about trading, hit that Register Your GTC Account button to get started!",
+        "list": {
+            "item1": "Trusted & Regulated Worldwide",
+            "item2": "Nearly 1 Million Active Traders Worldwide",
+            "item3": "Instant Deposits & Withdrawals",
+            "item4": "Secure, Instant & Super-Fast Execution"
+        },
+        "name": "Mohammed Madhi",
+        "position": "Business Development Manager - Dubai",
+        "buttonText1": "Register Your IB Account",
+        "buttonText2": "Book a Meeting"
+    },
+    "PartnerBanner": {
+    "title": "Let 2025 be the Year You Trade  with a Real, Award-Winning Leader.",
+    "paragraph": "We’ve got unbeatable spreads, super-fast deposits, and a team that actually wants your success. Whether you’re looking to get started as a trader or you're looking to grow your investment portfolio, let’s talk. No hard pitch, just real conversations that could lead to real results.",
+    "subheading": "Go ahead and book a meeting with me. Click on the Book a Meeting button below.",
+    "registerCta": "Register Your IB Account",
+    "bookCta": "Book a Meeting"
+  },
+   "PartnerSectionTwo": {
+    "title": "Good Brokers are Hard to Find.  Great Brokers - Like GTC - Are Gold Dust!",
+    "paragraph": "I get it. I really do. Finding a reliable brokerage isn’t easy. We're trusted by a million traders worldwide because we show up, stay consistent, and actually care about your investment growth.",
+    "subheading": "Let’s build something real, no drama, no excuses, just results.",
+    "registerCta": "Register Your IB Account",
+    "bookCta": "Book a Meeting"
+  },
+  "GoodPartner": {
+    "title": "Calling All Introducing Brokers:Still Stuck in the Same Old Deal?",
+    "paragraph": "If your current offer feels just \"Okay,\" it’s time for a change. Simply show us the deal you're on and we'll beat it. No pressure. No fluff. No Games. We’ll walk you through how we can do better, how we can give you a lot more value, more support, and more reasons to switch to GTC. This isn’t a sales pitch. It’s a chance to grow smarter.",
+    "cards": {
+      "card1": {
+        "title": "Up To 80% in Rebates!",
+        "desc": "You read that right! We're offering our partners up to a massive 80% in rebates. You won't find this deal anywhere else."
+      },
+      "card2": {
+        "title": "Small changes. Big Wins",
+        "desc": "When you start your switch to GTC, you'll see just how easy it is. We take care of all your needs, no matter what."
+      },
+      "card3": {
+        "title": "Your Goals.  Our Plan",
+        "desc": "We don’t do one-size-fits-all. We build around you, what you need, what you value, and where you’re headed."
+      }
+    },
+    "registerCta": "Register Your IB Account",
+    "bookCta": "Book a Meeting"
+  },
+    "TalkTrendsSection": {
+    "title": "We'll Talk Trends,{br}Not Just Tactics.",
+    "paragraph": "Everyone’s chasing the next big thing—AI tools, faster flows, smarter funnels. But not everyone’s talking about what’s actually working. I'm more than happy to share what we’re seeing across the industry, what’s changing, and where the smart money’s going.",
+    "registerCta": "Register Your IB Account",
+    "bookCta": "Book a Meeting"
+  }
+  }
+}
