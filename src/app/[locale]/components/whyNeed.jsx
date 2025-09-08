@@ -46,8 +46,8 @@ export default function WhyAttendIBEvent({ onCta }) {
         }}
       />
 
-      <div className="relative mx-auto max-w-5xl px-4 py-14 md:py-16">
-        <h2 className="text-center text-[26px] md:text-[40px] font-extrabold text-[#EEDBC3]">
+      <div className="relative mx-auto max-w-5xl px-4 pt-6  pb-10 md:py-16">
+        <h2 className="text-center text-[32px] md:text-[40px] font-extrabold text-[#EEDBC3]">
           Why You Need to be at this IB Event
         </h2>
 
@@ -61,7 +61,7 @@ export default function WhyAttendIBEvent({ onCta }) {
         <div className="mt-8 flex justify-center md:mt-10">
           <button
             onClick={onCta}
-            className="inline-flex items-center justify-center rounded-full bg-[#C49A6C] px-8 py-2.5 text-[15px] font-semibold text-white shadow-[0_8px_18px_rgba(0,0,0,.10)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-white/30"
+            className="inline-flex w-full sm:w-fit items-center justify-center rounded-full bg-[#C49A6C] px-8 py-2.5 text-[15px] font-semibold text-white shadow-[0_8px_18px_rgba(0,0,0,.10)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-white/30"
           >
             Book My Seat
           </button>

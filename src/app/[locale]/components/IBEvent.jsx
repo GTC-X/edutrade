@@ -38,22 +38,22 @@ export default function IbAgendaSection() {
       <div className="relative mx-auto max-w-7xl px-4 py-10 md:py-14">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-[24px] font-extrabold leading-tight tracking-tight text-[color:var(--h)] md:text-[40px]" style={{ ['--h']: PALETTE.textMain }}>
+          <h2 className="text-[32px] text-center md:text-left font-extrabold leading-tight tracking-tight text-[color:var(--h)] md:text-[40px]" style={{ ['--h']: PALETTE.textMain }}>
             The IB Event Agenda of All Agendas
           </h2>
-          <p className="mx-auto mt-2 max-w-[720px] text-[13px] leading-[1.7] text-[color:var(--b)] md:text-[16px]" style={{ ['--b']: PALETTE.textBody }}>
+          <p className="mx-auto mt-2 max-w-[720px] leading-[1.7] text-[color:var(--b)] text-[16px]" style={{ ['--b']: PALETTE.textBody }}>
             Here’s what you’re going to experience at the world’s biggest Introducing Broker event that’s being
             held at the world’s most iconic building!
           </p>
         </div>
 
         {/* Timeline */}
-        <div className="relative mt-8 md:mt-12">
+        <div className="relative mt-12">
           {/* Center line */}
 
           <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-x-10">
             {/* LEFT COLUMN */}
-            <div className="relative pr-10">
+            <div className="relative md:pr-10">
               <div className="space-y-5">
                 {left.map((item, i) => (
                   <AgendaItemLeft key={i} title={item.title} body={item.body} />
@@ -62,7 +62,7 @@ export default function IbAgendaSection() {
             </div>
 
             {/* RIGHT COLUMN */}
-            <div className="relative pl-10">
+            <div className="relative md:pl-10">
               <div className="space-y-5">
                 {right.map((item, i) => (
                   <AgendaItemLeft key={i} title={item.title} body={item.body} />
@@ -126,7 +126,7 @@ function AgendaItemRight({ title, body }) {
 /* ———————————————— Backdrops ———————————————— */
 function BackdropWave() {
   return (
-    <svg className="pointer-events-none h-[55%] absolute left-0 top-0 w-full" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden>
+    <svg className="pointer-events-none md:h-[55%] h-[75%] absolute left-0 top-0 w-full" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden>
       <path d="M0 80 C 180 140, 420 40, 720 110 C 980 170, 1180 120, 1440 160 L 1440 0 L 0 0 Z" fill={PALETTE.bg} />
       {/* white sweep near left to mimic mock */}
       <path d="M0 110 C 260 180, 560 40, 780 120 C 960 180, 1140 150, 1440 170 L 1440 160 L 0 160 Z" fill="#FFFFFF" opacity="0.9" />
@@ -138,7 +138,7 @@ function CandlesBackdrop() {
   const N = 26;
   const arr = Array.from({ length: N });
   return (
-    <svg className="pointer-events-none absolute bottom-[5%] right-0  w-full max-w-[1200px]" viewBox="0 0 1000 420" preserveAspectRatio="none" aria-hidden>
+    <svg className="pointer-events-none hidden md:block absolute bottom-[5%] right-0  w-full max-w-[1200px]" viewBox="0 0 1000 420" preserveAspectRatio="none" aria-hidden>
       <g opacity="0.5">
         <path d="M971.37 66.6836H982.53V130.698H971.37V66.6836Z" fill="#76469A" />
         <path d="M976.117 40.7229H977.766V66.6997H976.117V40.7229Z" fill="#76469A" />

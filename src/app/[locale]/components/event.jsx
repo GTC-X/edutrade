@@ -19,7 +19,7 @@ const COLOR = {
 
 export default function EventFitSection({ onCta }) {
   return (
-    <section className="relative w-full overflow-hidden border-t-4" style={{ borderColor: COLOR.purple }}>
+    <section className="relative w-full overflow-hidden" style={{ borderColor: COLOR.purple }}>
       <div
         className="pointer-events-none absolute right-0 bottom-[-12px] w-full "
         style={{
@@ -37,7 +37,7 @@ export default function EventFitSection({ onCta }) {
           {/* LEFT: Heading */}
           <div className="md:col-span-5 lg:col-span-5">
             <h2
-              className="text-[24px] font-extrabold leading-tight tracking-tight md:text-[40px]"
+              className="text-[32px] font-extrabold leading-tight tracking-tight md:text-[40px]"
               style={{ color: COLOR.purple }}
             >
               Is This Event for You?
@@ -46,25 +46,25 @@ export default function EventFitSection({ onCta }) {
 
           {/* RIGHT: Copy + bullets + CTA */}
           <div className="md:col-span-7 lg:col-span-7">
-            <p className="text-[14.5px] leading-[1.75] md:text-[18px]" style={{ color: COLOR.body }}>
+            <p className="text-[16px] leading-[1.75] md:text-[18px]" style={{ color: COLOR.body }}>
               If you’re an Introducing Broker in the UAE or wider GCC who’s ready to:
             </p>
 
-            <ul className="mt-4 list-disc space-y-2 pl-10 text-[14.5px] leading-[1.75] md:text-[18px]" style={{ color: COLOR.body }}>
+            <ul className="mt-4 list-disc space-y-2 pl-10 text-[16px] leading-[1.75] md:text-[18px]" style={{ color: COLOR.body }}>
               <li>Grow your network of traders and attract higher volumes.</li>
               <li>Boost your rebates and commissions with smarter strategies.</li>
               <li>Simplify client management using tools built for IB success.</li>
               <li>Stand out in your region and position yourself as a leading IB.</li>
             </ul>
 
-            <p className="mt-4 text-[14.5px] leading-[1.75] md:text-[22px]" style={{ color: COLOR.bold }}>
+            <p className="mt-4 text-[16px] leading-[1.75] md:text-[22px]" style={{ color: COLOR.bold }}>
               <span className="font-bold">Then yes, this IB event has been designed for you.</span>
             </p>
 
             <div className="mt-8 flex justify-center md:justify-start">
               <button
                 onClick={onCta}
-                            className="inline-flex items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] shadow-[0_8px_18px_rgba(0,0,0,.10)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
+                            className="inline-flex w-full sm:w-fit items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] shadow-[0_8px_18px_rgba(0,0,0,.10)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
                 style={{ backgroundColor: COLOR.purple }}
               >
                 Book My Seat

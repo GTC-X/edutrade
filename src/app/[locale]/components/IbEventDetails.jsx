@@ -22,21 +22,28 @@ export default function IbEventDetails() {
             <div className="mx-auto container py-12 md:py-16">
                 {/* Title */}
                 <h2
-                    className="text-[22px] font-semibold leading-tight text-[color:var(--p)] md:text-[40px]"
+                    className="text-[32px] text-center md:text-left font-semibold leading-tight text-[color:var(--p)] md:text-[40px]"
                     style={{ ['--p']: COLOR.purple }}
                 >
                     IB Event Details
                 </h2>
 
+                <p className="mt-3  text-center block md:hidden leading-[1.75] text-[color:var(--body)] md:mt-3.5 md:text-[16px]" style={{ ['--body']: COLOR.body }}>
+                    At Edu.trade, we’re bringing together some of the most influential voices in Forex, finance, and the GCC business world. From keynote speakers who’ll set the vision to panelists who’ve built thriving IB networks, each expert will share practical insights you can apply to your own growth journey.
+                </p>
+                <p className="mt-3  text-center block md:hidden leading-[1.75] text-[color:var(--body)] md:text-[16px]" style={{ ['--body']: COLOR.body }}>
+                    Unlike other events, you’re actually going to be shown how to grow your Introducing Broker business!
+                </p>
+
                 {/* Card */}
                 <div
-                    className="mt-6 rounded-[8px] border border-[#98A2B3 md:mt-9"
+                    className="rounded-[8px] border border-[#98A2B3 mt-9"
                     style={{ borderColor: COLOR.border }}
                 >
-                    <div className="grid grid-cols-1 md:grid-cols-[220px_minmax(0,1fr)_400px]">
+                    <div className="grid grid-cols-1 text-center md:text-left md:grid-cols-[220px_minmax(0,1fr)_400px] pt-6 md:pt-0">
                         {/* Left: Date */}
-                        <div className="order-1 px-4 py-6 md:order-none md:px-4 md:py-6">
-                            <div className="text-[15px] font-semibold leading-[1.35] text-[color:var(--p)] md:text-[24px]" style={{ ['--p']: COLOR.purple }}>
+                        <div className="px-4 py-6">
+                            <div className="text-[20px] font-semibold leading-[1.35] text-[color:var(--p)] md:text-[24px]" style={{ ['--p']: COLOR.purple }}>
                                 <span className="block">Saturday, 11th</span>
                                 <span className="block">October 2025</span>
                             </div>
@@ -57,7 +64,7 @@ export default function IbEventDetails() {
                             </p>
 
                             <button
-                            className="mt-8 inline-flex items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
+                                className="mt-8 hidden sm:block items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
                                 style={{ backgroundColor: COLOR.purple }}
                             >
                                 Book My Seat
@@ -65,7 +72,7 @@ export default function IbEventDetails() {
                         </div>
 
                         {/* Right: Image with purple tint & left divider */}
-                        <div className="relative min-h-[220px] overflow-hidden rounded-b-xl md:rounded-r-xl md:rounded-bl-none">
+                        <div className="relative min-h-[220px] overflow-hidden rounded-b-[8px] md:rounded-r-[8px] md:rounded-bl-none">
                             {/* divider line */}
                             <div className="absolute left-0 top-0 hidden h-full w-px md:block" style={{ backgroundColor: COLOR.border }} />
 
@@ -79,6 +86,12 @@ export default function IbEventDetails() {
                         </div>
                     </div>
                 </div>
+                <button
+                    className="mt-8 w-full items-center block sm:hidden justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
+                    style={{ backgroundColor: COLOR.purple }}
+                >
+                    Book My Seat
+                </button>
             </div>
         </section>
     );

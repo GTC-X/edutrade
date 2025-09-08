@@ -28,7 +28,7 @@ export default function MeetSpeakersSection() {
         <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-12 md:gap-10">
           {/* LEFT: Heading + copy */}
           <div className="md:col-span-4">
-            <h2 className="text-[26px] font-semibold leading-[1.1] text-[color:var(--purple)] md:text-[40px]" style={{ ['--purple']: COLOR.purple }}>
+            <h2 className="text-[32px] font-semibold leading-[1.1] text-[color:var(--purple)] md:text-[40px]" style={{ ['--purple']: COLOR.purple }}>
               Meet the Speakers
             </h2>
             <p className="mt-3 text-[14.5px] leading-[1.75] text-[color:var(--body)] md:mt-3.5 md:text-[16px]" style={{ ['--body']: COLOR.body }}>
@@ -48,7 +48,7 @@ export default function MeetSpeakersSection() {
               )}
             </div>
             <button
-              className="mt-8 inline-flex items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
+              className="mt-8 w-full sm:w-fit inline-flex items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
               style={{ backgroundColor: COLOR.purple }}
             >
               Book My Seat
