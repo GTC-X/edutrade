@@ -17,7 +17,7 @@ const page = () => {
 
     return (
         <>
-            <Meta title='Trusted Institutional Liquidity Provider | GTC Prime' description='Looking for a reliable institutional liquidity provider? GTC Prime delivers deep liquidity, ultra-fast execution & FIX API for brokers, funds & asset managers.' />
+            <Meta title='Edu.trade Introducing Brokers Growth Event 11th October 2025' description='Join Edu.trade at The Museum of the Future and discover how GCC Introducing Brokers can scale their business with exclusive events, insights, and opportunities.' />
             <EduTradeHero />
             <WhyAttendIBEvent setIsOpen={setIsOpen} />
             <EventFitSection setIsOpen={setIsOpen} />
