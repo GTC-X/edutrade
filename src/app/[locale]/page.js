@@ -18,7 +18,7 @@ const page = () => {
     return (
         <>
             <Meta title='Edu.trade Introducing Brokers Growth Event 11th October 2025' description='Join Edu.trade at The Museum of the Future and discover how GCC Introducing Brokers can scale their business with exclusive events, insights, and opportunities.' />
-            <EduTradeHero />
+            <EduTradeHero setIsOpen={setIsOpen}/>
             <WhyAttendIBEvent setIsOpen={setIsOpen} />
             <EventFitSection setIsOpen={setIsOpen} />
             <div>
@@ -30,11 +30,11 @@ const page = () => {
                     className="w-full h-[350px] object-cover cursor-pointer"
                 />
             </div>
-            <IbAgendaSection />
-            <MeetSpeakersSection />
-            <IbEventDetails />
-            <IbCtaBanner />
-            <EduTradeFooterBar/>
+            <IbAgendaSection setIsOpen={setIsOpen}/>
+            <MeetSpeakersSection setIsOpen={setIsOpen}/>
+            <IbEventDetails setIsOpen={setIsOpen}/>
+            <IbCtaBanner setIsOpen={setIsOpen}/>
+            <EduTradeFooterBar setIsOpen={setIsOpen}/>
             <SliderModalPrime setIsOpen={setIsOpen} isOpen={isOpen} />
         </>
     )

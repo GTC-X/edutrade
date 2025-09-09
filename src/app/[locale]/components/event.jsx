@@ -17,7 +17,7 @@ const COLOR = {
   chart: '#C9B2E6',         // backdrop strokes/fills (very light purple)
 };
 
-export default function EventFitSection({ onCta }) {
+export default function EventFitSection({ setIsOpen }) {
   return (
     <section className="relative w-full overflow-hidden" style={{ borderColor: COLOR.purple }}>
       <div
@@ -25,13 +25,13 @@ export default function EventFitSection({ onCta }) {
         style={{
           backgroundImage: "url('/bg-for-you.svg')",
           backgroundSize: "cover",
-          height:"380px",
+          height: "380px",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
       />
       {/* Background chart */}
- 
+
       <div className="relative mx-auto container py-10 md:py-14">
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-12">
           {/* LEFT: Heading */}
@@ -63,8 +63,10 @@ export default function EventFitSection({ onCta }) {
 
             <div className="mt-8 flex justify-center md:justify-start">
               <button
-                onClick={onCta}
-                            className="inline-flex w-full sm:w-fit items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] shadow-[0_8px_18px_rgba(0,0,0,.10)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
+                onClick={() => {
+                  setIsOpen(true)
+                }}
+                className="inline-flex w-full sm:w-fit items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] shadow-[0_8px_18px_rgba(0,0,0,.10)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
                 style={{ backgroundColor: COLOR.purple }}
               >
                 Book My Seat

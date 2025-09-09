@@ -17,7 +17,7 @@ const PALETTE = {
   time: '#A99DCA',        // time text
 };
 
-export default function IbAgendaSection() {
+export default function IbAgendaSection({setIsOpen}) {
   const left = [
     { title: 'Speech Title 01', body: lorem(2) },
     { title: 'Speech Title 02', body: lorem(2) },
@@ -38,7 +38,7 @@ export default function IbAgendaSection() {
       <div className="relative mx-auto max-w-7xl px-4 py-10 md:py-14">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-[32px] text-center md:text-left font-extrabold leading-tight tracking-tight text-[color:var(--h)] md:text-[40px]" style={{ ['--h']: PALETTE.textMain }}>
+          <h2 className="text-[32px] text-center md:text-center font-extrabold leading-tight tracking-tight text-[color:var(--h)] md:text-[40px]" style={{ ['--h']: PALETTE.textMain }}>
             The IB Event Agenda of All Agendas
           </h2>
           <p className="mx-auto mt-2 max-w-[720px] leading-[1.7] text-[color:var(--b)] text-[16px]" style={{ ['--b']: PALETTE.textBody }}>
