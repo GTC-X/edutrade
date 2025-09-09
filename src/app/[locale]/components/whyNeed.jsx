@@ -7,7 +7,7 @@ const BRAND = {
 
 
 export default function WhyAttendIBEvent({ onCta }) {
-  const items= [
+  const items = [
     {
       front: 'Unlock Growth Secrets',
       back:
@@ -16,12 +16,14 @@ export default function WhyAttendIBEvent({ onCta }) {
     {
       front: 'Connections That Count',
       back:
-        'Gain exclusive knowledge on scaling your IB business across the GCC, while maximising rebates and commissions.',
+        'Build powerful relationships with industry leaders and decision-makers who open doors to bigger opportunities.',
+
     },
     {
       front: 'Insider GCC Advantage',
       back:
-        'Build powerful relationships with industry leaders and decision-makers who open doors to bigger opportunities.',
+        'Gain exclusive knowledge on scaling your IB business across the GCC, while maximising rebates and commissions.',
+
     },
     {
       front: 'The Future-Ready Edge',
