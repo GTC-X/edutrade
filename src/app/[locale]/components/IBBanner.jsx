@@ -50,7 +50,7 @@ export default function IbCtaBanner({
                         <p className="text-white text-[18px] text-center md:text-left leading-[32px] md:text-[22px]">
                             Opportunities like this don’t come often. A chance to
                             network with decision‑makers, gain exclusive IB insights, and walk away with a clear IB roadmap
-                            for growth in the GCC. Seats are limited, and once and once they’re gone, they’re gone.
+                            for growth in the GCC. Seats are limited, and once they’re gone, they’re gone.
                         </p>
 
                         <button
