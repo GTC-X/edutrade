@@ -2,6 +2,7 @@ import "./globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { ToastContainer } from "react-toastify";
 
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
@@ -52,6 +53,7 @@ export default async function LocaleLayout({ children, params }) {
       </head>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <ToastContainer autoClose={3000} />
       </body>
     </html>
   );

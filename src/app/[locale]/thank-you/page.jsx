@@ -1,15 +1,8 @@
-
-import React from 'react';
-import EduTradeFooterBar from '../components/Footer';
+"use client"
+import React, { useEffect, useState } from 'react';
+import EduTradeFooterBar from '../components/footer';
 import Meta from '../components/Meta';
-
-
-/**
- * Confirmation Notice — Pixel‑perfect JSX (TailwindCSS)
- * Matches the mock: purple background with subtle chart pattern, left copy,
- * right glossy purple circle with a white check, and a white curved wedge on
- * the far right. All sizes, spacing, and colors tuned to the screenshot.
- */
+import { useRouter } from "next/navigation";
 
 const C = {
   purple: '#76469A',
@@ -20,63 +13,99 @@ const C = {
 };
 
 export default function ConfirmNotice({ firstName = '[FIRST NAME]', email = '[EMAIL]' }) {
+  const router = useRouter();
+
+  const [user, setUser] = useState(null);
+  const [checked, setChecked] = useState(false); // Track if we've checked localStorage
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedUser = localStorage.getItem("user");
+      if (storedUser) {
+        setUser(JSON.parse(storedUser));
+      }
+      setChecked(true); // Mark check complete
+    }
+
+    return () => {
+      localStorage.removeItem("user");
+    };
+  }, []);
+
+  useEffect(() => {
+    // Only redirect after checking
+    if (checked && !user) {
+      router.push("/");
+    }
+  }, [checked, user]);
+
+  if (!checked) return null; // Don't render anything until we've checked
   return (
     <>
-     <Meta title='Edu.trade Introducing Brokers Growth Event 11th October 2025' description='Join Edu.trade at The Museum of the Future and discover how GCC Introducing Brokers can scale their business with exclusive events, insights, and opportunities.' />
-  
-    <div className=' min-h-screen flex flex-col'>
-      <section className="relative w-full flex-1 h-full overflow-hidden" style={{ backgroundColor: C.purple }}>
-        <div className="mx-auto container pt-6">
-          <div className="py-3 flex justify-center md:justify-center">
-            <img src="/logo-white.svg" alt="etu logo" className="h-8 w-auto" />
-          </div>
-        </div>
+      <Meta title='Edu.trade Introducing Brokers Growth Event 11th October 2025' description='Join Edu.trade at The Museum of the Future and discover how GCC Introducing Brokers can scale their business with exclusive events, insights, and opportunities.' />
 
-        {/* Background: soft chart lines & dots */}
-        <ChartBackdrop />
-        {/* Right white curved wedge */}
-        <RightCurve />
-
-        <div className="relative mx-auto container py-10  md:py-14">
-          <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-12">
-            {/* LEFT: Copy */}
-            <div className="md:col-span-7 lg:col-span-7">
-              <h1 className="text-[26px] font-extrabold leading-[1.15] text-white md:text-[50px]">
-                Hi, {firstName},
-              </h1>
-
-              <p className="mt-4 max-w-[560px] text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
-                We’ve just sent a confirmation email, which explains the steps we take to ensure that everyone coming to our events is vetted.
-              </p>
-              <p className="mt-3 max-w-[560px] text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
-                Give it a quick look, it has everything you need to know.
-              </p>
-
-              <p className="mt-4 text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
-                Can’t find the email?
-              </p>
-              <p className="mt-1 max-w-[560px] font-normal text-[20px] leading-[32px]" style={{ color: C.copySoft }}>
-                Sometimes it sneaks into your spam or junk folder. If it has, just move it back to your inbox so you don’t miss any updates from us.
-              </p>
-
-              <p className="mt-4 text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
-                Have a great day!
-              </p>
-              <p className="mt-3 text-[20px] leading-[32px] text-white">
-                <span className="font-semibold">Your <span className="font-semibold">Edu.trade</span> Family</span>
-              </p>
-            </div>
-
-            {/* RIGHT: Glossy check disc */}
-            <div className="md:col-span-5 lg:col-span-5 flex items-center justify-center md:justify-end">
-              <CheckDisc />
+      <div className=' min-h-screen flex flex-col'>
+        <div
+          className="pointer-events-none absolute right-0 bottom-0 h-full w-full "
+          style={{
+            backgroundImage: "url('/bg-thank-you.png')",
+            backgroundSize: "100% 100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center bottom",
+          }}
+        />
+        <section className="relative w-full flex-1 h-full overflow-hidden" >
+          <div className="mx-auto container pt-6">
+            <div className="py-3 flex justify-center md:justify-center">
+              <img src="/logo-white.svg" alt="etu logo" className="h-8 w-auto" />
             </div>
           </div>
-        </div>
-      </section>
-      <EduTradeFooterBar />
-    </div>
-      </>
+
+          {/* Background: soft chart lines & dots */}
+          <ChartBackdrop />
+          {/* Right white curved wedge */}
+          {/* <RightCurve /> */}
+
+          <div className="relative mx-auto container py-10  md:py-14">
+            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-12">
+              {/* LEFT: Copy */}
+              <div className="md:col-span-7 lg:col-span-7">
+                <h1 className="text-[26px] font-extrabold leading-[1.15] text-white md:text-[50px]">
+                  Hi {user?.first_name},
+                </h1>
+
+                <p className="mt-4 max-w-[560px] text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
+                  We’ve just sent a confirmation email, which explains the steps we take to ensure that everyone coming to our events is vetted.
+                </p>
+                <p className="mt-3 max-w-[560px] text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
+                  Give it a quick look, it has everything you need to know.
+                </p>
+
+                <p className="mt-4 text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
+                  Can’t find the email?
+                </p>
+                <p className="mt-1 max-w-[560px] font-normal text-[20px] leading-[32px]" style={{ color: C.copySoft }}>
+                  Sometimes it sneaks into your spam or junk folder. If it has, just move it back to your inbox so you don’t miss any updates from us.
+                </p>
+
+                <p className="mt-4 text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
+                  Have a great day!
+                </p>
+                <p className="mt-3 text-[20px] leading-[32px] text-white">
+                  <span className="font-semibold">Your <span className="font-semibold">Edu.trade</span> Family</span>
+                </p>
+              </div>
+
+              {/* RIGHT: Glossy check disc */}
+              <div className="md:col-span-5 lg:col-span-5 flex items-center justify-center md:justify-end">
+                {/* <CheckDisc /> */}
+              </div>
+            </div>
+          </div>
+        </section>
+        <EduTradeFooterBar />
+      </div>
+    </>
   );
 }
 

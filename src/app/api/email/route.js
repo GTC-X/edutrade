@@ -20,7 +20,7 @@ const generateEmailContent = (data) => {
           <table width="650" cellpadding="0" cellspacing="0" style="border:1px solid #e0e0e0; border-radius:8px;padding:30px; padding-top: 20px">
             <tr>
               <td align="center" style="padding-bottom: 20px;">
-                <img src="https://edutrade-phi.vercel.app/logo.svg" alt="GTC Logo" style="width:80px;" />
+                <img src="https://edutrade-phi.vercel.app/logo.svg" alt="ETU Logo" style="width:80px;" />
               </td>
             </tr>
             <tr>
