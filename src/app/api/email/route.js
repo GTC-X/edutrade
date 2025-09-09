@@ -20,17 +20,17 @@ const generateEmailContent = (data) => {
           <table width="650" cellpadding="0" cellspacing="0" style="border:1px solid #e0e0e0; border-radius:8px;padding:30px; padding-top: 20px">
             <tr>
               <td align="center" style="padding-bottom: 20px;">
-                <img src="https://gtcprime.vercel.app/prime/logo.png" alt="GTC Logo" style="width:80px;" />
+                <img src="https://edutrade-phi.vercel.app/logo.svg" alt="GTC Logo" style="width:80px;" />
               </td>
             </tr>
             <tr>
-              <td align="center" style="font-size:20px;font-weight:600;color:#03A7D9;padding-bottom:10px;">
-                Let’s Take the Next Step Together
+              <td align="center" style="font-size:20px;font-weight:600;color:#662D91;padding-bottom:10px;">
+                Attending the Museum of the Future IB Event
               </td>
             </tr>
             <tr>
               <td align="center" style="font-size:14px;color:#4D4D70;padding-bottom:20px;">
-              Confirm your email & book a call with the GTC Prime team.
+              Thanks for showing an interest in attending the IB event at the Museum of the Future in Dubai. Simply confirm your email.
               </td>
             </tr>
             <tr><td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td></tr>
@@ -42,14 +42,17 @@ const generateEmailContent = (data) => {
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:10px;">
 
-Thanks again for your interest in GTC Prime.
+
+Thanks for showing an interest in attending the greatest Introducing Broker event of the year at the Museum of the Future.
+
+
 
 
               </td>
             </tr>
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:10px;">
-                You're now one step closer to accessing institutional-grade liquidity and support built around your brokerage's needs.
+               The event is taking place at 1pm on Saturday, 11th October 2025 and we’d love to see you there!
               </td>
             </tr>
                <tr>
@@ -60,17 +63,25 @@ Our friendly GTC Customer Care team will give you a quick call to help you final
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:20px;">
                 If you need any help or assistance, simply reach out to our amazing Customer Care team via our Live Chat feature that’s on our website, 
-                <a href="https://gtcprime.com">https://GTCPRIME.com</a>.
+                <a href="https://edu.tradecom">https://edu.tradecom</a>.
               </td>
             </tr>
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:10px;">
-                We hope you’re excited about the upcoming GTC Demo Trading Tournament!
+                Important Info
+
+
+
+This is a very specialised and sought after event, and seats are extremely limited, so we can only offer them to Introducing Brokers who really do want to be shown how they can expand their business.
+
+
               </td>
             </tr>
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:30px;">
-                Have a great day,<br>Your GTC Family
+                Have a great day,<br>
+
+Your Edu.trade Family
               </td>
             </tr>
             <tr><td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td></tr>
@@ -79,11 +90,11 @@ Our friendly GTC Customer Care team will give you a quick call to help you final
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcprime.vercel.app/prime/logo.png" alt="GTC Logo" style="width: 80px;" />
+                      <img src="https://edutrade-phi.vercel.app/logo.svg" alt="GTC Logo" style="width: 80px;" />
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Phone: +971 800 667788<br/>
-                      ✉️ Email: <a href="mailto:support@gtcprime.com" style="color: #192055; text-decoration: none;">support@gtcprime.com</a>
+                      ✉️ Email: <a href="mailto:support@edu.tradecom" style="color: #192055; text-decoration: none;">support@edu.tradecom</a>
                     </td>
                   </tr>
                 </table>

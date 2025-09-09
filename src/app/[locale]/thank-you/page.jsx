@@ -1,7 +1,7 @@
 
 import React from 'react';
 import EduTradeFooterBar from '../components/Footer';
-
+import Meta from '../components/Meta';
 
 
 /**
@@ -21,6 +21,9 @@ const C = {
 
 export default function ConfirmNotice({ firstName = '[FIRST NAME]', email = '[EMAIL]' }) {
   return (
+    <>
+     <Meta title='Edu.trade Introducing Brokers Growth Event 11th October 2025' description='Join Edu.trade at The Museum of the Future and discover how GCC Introducing Brokers can scale their business with exclusive events, insights, and opportunities.' />
+  
     <div className=' min-h-screen flex flex-col'>
       <section className="relative w-full flex-1 h-full overflow-hidden" style={{ backgroundColor: C.purple }}>
         <div className="mx-auto container pt-6">
@@ -43,7 +46,7 @@ export default function ConfirmNotice({ firstName = '[FIRST NAME]', email = '[EM
               </h1>
 
               <p className="mt-4 max-w-[560px] text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
-                We’ve just sent a confirmation email to {email}, which explains the steps we take to ensure that everyone coming to our events is vetted.
+                We’ve just sent a confirmation email, which explains the steps we take to ensure that everyone coming to our events is vetted.
               </p>
               <p className="mt-3 max-w-[560px] text-[20px] font-normal leading-[32px]" style={{ color: C.copy }}>
                 Give it a quick look, it has everything you need to know.
@@ -73,6 +76,7 @@ export default function ConfirmNotice({ firstName = '[FIRST NAME]', email = '[EM
       </section>
       <EduTradeFooterBar />
     </div>
+      </>
   );
 }
 
@@ -100,7 +104,7 @@ function CheckDisc() {
 function RightCurve() {
   // large white oval pushed off-screen right to create the curved wedge
   return (
-    <div className="pointer-events-none absolute right-[-18%] top-[-20%] h-[160%] w-[55%] rounded-[999px] " >
+    <div className="pointer-events-none absolute right-[-18%] top-[-20%] h-[200%] w-[55%] rounded-[999px] min-h-screen" >
       <svg xmlns="http://www.w3.org/2000/svg" width="735" height="914" viewBox="0 0 735 914" fill="none">
         <path d="M440.905 231.617C508.625 -62.2669 734.51 -165.46 850.847 -191.783L1315.52 173.153L449.209 1276.21L0.306653 923.66C120.72 852.898 352.696 614.415 440.905 231.617Z" fill="#F3E3FF" />
       </svg>

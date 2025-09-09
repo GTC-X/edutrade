@@ -14,7 +14,7 @@ const COLOR = {
   border: '#98A2B3',        // card border
 };
 
-export default function MeetSpeakersSection() {
+export default function MeetSpeakersSection({ setIsOpen }) {
   const speakers = [
     { name: 'Full name', title: 'Job title', bio: sampleBio() },
     { name: 'Full name', title: 'Job title', bio: sampleBio() },
@@ -50,6 +50,9 @@ export default function MeetSpeakersSection() {
             <button
               className="mt-8 w-full sm:w-fit inline-flex items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
               style={{ backgroundColor: COLOR.purple }}
+              onClick={() => {
+                setIsOpen(true)
+              }}
             >
               Book My Seat
             </button>

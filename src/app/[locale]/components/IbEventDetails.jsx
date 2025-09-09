@@ -16,7 +16,7 @@ const COLOR = {
     overlay: '#662D91', // image purple tint
 };
 
-export default function IbEventDetails() {
+export default function IbEventDetails({ setIsOpen }) {
     return (
         <section className="w-full" style={{ backgroundColor: COLOR.page }}>
             <div className="mx-auto container py-12 md:py-16">
@@ -66,6 +66,9 @@ export default function IbEventDetails() {
                             <button
                                 className="mt-8 hidden sm:block items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[#fff] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
                                 style={{ backgroundColor: COLOR.purple }}
+                                onClick={() => {
+                                    setIsOpen(true)
+                                }}
                             >
                                 Book My Seat
                             </button>

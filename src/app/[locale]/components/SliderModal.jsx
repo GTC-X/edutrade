@@ -19,7 +19,7 @@ const SliderModalPrime = ({ isOpen, setIsOpen }) => {
                     className="fixed inset-x-0 bottom-0 z-10 pointer-events-none select-none"
                 >
                       <div
-                        className="w-full h-[220px] md:h-[800px] bg-top bg-cover opacity-80 bg-[url('/prime/bg-overlay.webp')]"
+                        className="w-full min-h-screen  bg-top bg-cover opacity-80 bg-[url('/bg-last.png')]"
                     />
                 </div>
 

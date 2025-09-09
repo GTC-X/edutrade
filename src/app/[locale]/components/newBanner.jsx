@@ -9,7 +9,7 @@ const BRAND = {
     goldText: '#FFF',
 };
 
-export default function EduTradeHero({ ringSrc = '/banner-img.svg' }) {
+export default function EduTradeHero({ ringSrc = '/banner-img.svg', setIsOpen }) {
     const eventDate = useMemo(() => new Date('2025-10-11T10:00:00.000Z'), []);
     const [t, setT] = useState(diff(eventDate));
     useEffect(() => { const id = setInterval(() => setT(diff(eventDate)), 1000); return () => clearInterval(id); }, [eventDate]);
@@ -34,6 +34,9 @@ export default function EduTradeHero({ ringSrc = '/banner-img.svg' }) {
                             At Edu.trade’s premier Introducing Broker event at The Museum of the Future in Dubai, you’ll learn how top GCC Introducing Brokers are multiplying their commissions, winning more traders, and locking in long‑term growth. If you’re serious about scaling your IB business, this is where it starts.
                         </p>
                         <button
+                            onClick={() => {
+                                setIsOpen(true)
+                            }}
                             className="mt-8 hidden md:block items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[color:var(--goldText)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
                             style={{ ['--gold']: BRAND.gold, ['--goldText']: BRAND.goldText }}
                         >
@@ -68,6 +71,9 @@ export default function EduTradeHero({ ringSrc = '/banner-img.svg' }) {
                         <button
                             className="my-8 block md:hidden w-full items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[color:var(--goldText)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
                             style={{ ['--gold']: BRAND.gold, ['--goldText']: BRAND.goldText }}
+                            onClick={() => {
+                                setIsOpen(true)
+                            }}
                         >
                             Book My Seat
                         </button>

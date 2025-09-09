@@ -28,11 +28,11 @@ export async function POST(req) {
           <table width="650" cellpadding="0" cellspacing="0" style="border:1px solid #e0e0e0; border-radius:8px;padding:30px; padding-top: 20px">
             <tr>
               <td align="center" style="padding-bottom: 20px;">
-                <img src="https://gtcprime.vercel.app/prime/logo.png" alt="GTC Logo" style="width:80px;" />
+                <img src="https://edutrade-phi.vercel.app/logo.svg" alt="GTC Logo" style="width:80px;" />
               </td>
             </tr>
             <tr>
-              <td align="center" style="font-size:20px;font-weight:600;color:#03A7D9;padding-bottom:10px;">
+              <td align="center" style="font-size:20px;font-weight:600;color:#662D91;padding-bottom:10px;">
                 Let’s Take the Next Step Together
               </td>
             </tr>
@@ -61,14 +61,14 @@ Thanks again for your interest in GTC Prime.
               </td>
             </tr>
             <tr>
-              <td style="font-size:24px;font-weight:600;color:#04417B;padding:20px 0px;">
+              <td style="font-size:24px;font-weight:600;color:#662D91;padding:20px 0px;">
                 ${otp}
               </td>
             </tr>
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:20px;">
                 If you need any help or assistance, simply reach out to our amazing Customer Care team via our Live Chat feature that’s on our website, 
-                <a href="https://gtcprime.com">https://GTCPRIME.com</a>.
+                <a href="https://edu.trade">https://edu.trade</a>.
               </td>
             </tr>
             <tr>
@@ -87,11 +87,11 @@ Thanks again for your interest in GTC Prime.
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcprime.vercel.app/prime/logo.png" alt="GTC Logo" style="width: 80px;" />
+                      <img src="https://edutrade-phi.vercel.app/logo.svg" alt="GTC Logo" style="width: 80px;" />
                     </td>
                     <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
                       📞 Phone: +971 800 667788<br/>
-                      ✉️ Email: <a href="mailto:support@gtcprime.com" style="color: #192055; text-decoration: none;">support@gtcprime.com</a>
+                      ✉️ Email: <a href="mailto:support@edu.trade" style="color: #192055; text-decoration: none;">support@edu.trade</a>
                     </td>
                   </tr>
                 </table>
@@ -177,7 +177,7 @@ Thanks again for your interest in GTC Prime.
 
 <tr>
   <td align="center" style="font-size: 12px; color: #666666; padding-top: 15px; padding-bottom: 30px;">
-    &copy; Copyright 2025 GTCPRIME – All Rights Reserved
+    &copy; Copyright 2025 Edu.Trade – All Rights Reserved
   </td>
 </tr>
 

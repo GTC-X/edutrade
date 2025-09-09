@@ -6,7 +6,7 @@ const BRAND = {
 };
 
 
-export default function WhyAttendIBEvent({ onCta }) {
+export default function WhyAttendIBEvent({ onCta, setIsOpen }) {
   const items = [
     {
       front: 'Unlock Growth Secrets',
@@ -62,7 +62,9 @@ export default function WhyAttendIBEvent({ onCta }) {
 
         <div className="mt-8 flex justify-center md:mt-10">
           <button
-            onClick={onCta}
+            onClick={() => {
+              setIsOpen(true)
+            }}
             className="inline-flex w-full sm:w-fit items-center justify-center rounded-full bg-[#C49A6C] px-8 py-2.5 text-[15px] font-semibold text-white shadow-[0_8px_18px_rgba(0,0,0,.10)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-white/30"
           >
             Book My Seat

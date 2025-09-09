@@ -164,7 +164,7 @@ const PrimeForm = ({ title = 'Register Now', subtitle = '' }) => {
             toast.success('Data inserted successfully');
             localStorage.setItem('user', JSON.stringify(data));
             formik.resetForm();
-            router.push('/uae/liquidity/thank-you');
+            router.push('/thank-you');
         } catch (err) {
             toast.error('Error inserting data: ' + (err?.response?.data?.message || err.message));
         } finally {
@@ -186,7 +186,7 @@ const PrimeForm = ({ title = 'Register Now', subtitle = '' }) => {
             <div className="w-full max-w-100%">
                 <div className="relative w-full">
                     <img
-                        src='/prime/logo.png'
+                        src='/logo-white.svg'
                         alt="GTCFX"
                         className="h-12 w-auto mx-auto"
                     />
@@ -195,7 +195,7 @@ const PrimeForm = ({ title = 'Register Now', subtitle = '' }) => {
 
                 <div className={`rounded-[18px] bg-white ${cardShadow} border border-[#E6EEF6] mt-10`}>
                     <div className="px-6 pt-7 pb-6">
-                        <h2 className="text-[24px] font-extrabold text-[#04417B] text-center mb-1">
+                        <h2 className="text-[24px] font-extrabold text-[#662D91] text-center mb-1">
                             {'Register Now'}
                         </h2>
                         {subtitle ? (
@@ -280,7 +280,7 @@ const PrimeForm = ({ title = 'Register Now', subtitle = '' }) => {
                                         <button
                                             type="button"
                                             onClick={sendEmailOtp}
-                                            className="absolute right-2 top-1/2 -translate-y-1/2 h-[36px] px-3 rounded-[10px] bg-gradient-to-b from-[#003651] to-[#03A7D9] hover:bg-[#0797CB] text-white text-[12px] font-semibold"
+                                            className="absolute right-2 top-1/2 -translate-y-1/2 h-[36px] px-3 rounded-[10px] bg-[#662D91] text-white text-[12px] font-semibold"
                                         >
                                             {otpLoading ? 'Sending…' : 'Get Code'}
                                         </button>
@@ -379,7 +379,7 @@ const PrimeForm = ({ title = 'Register Now', subtitle = '' }) => {
                                 <button
                                     type="submit"
 
-                                    className={`w-full h-[44px] rounded-[12px] bg-gradient-to-b from-[#003651] to-[#03A7D9] font-semibold tracking-wide flex items-center justify-center gap-2 transition   'bg-[#09A5DE] hover:bg-[#0797CB] text-white`}
+                                    className={`w-full h-[44px] rounded-[12px] bg-[#662D91] text-white font-semibold tracking-wide flex items-center justify-center gap-2 transition`}
                                 >
                                     Book a Call
                                     <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">

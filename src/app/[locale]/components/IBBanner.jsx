@@ -18,6 +18,7 @@ const BRAND = {
 export default function IbCtaBanner({
     bgSrc = 'https://images.unsplash.com/photo-1645362163376-3ae3b8ed8c52?q=80&w=1800&auto=format&fit=crop',
     onCta,
+    setIsOpen
 }) {
     return (
         <section className="relative w-full overflow-hidden min-h-[390px] flex items-center">
@@ -54,7 +55,9 @@ export default function IbCtaBanner({
                         </p>
 
                         <button
-                            onClick={onCta}
+                            onClick={() => {
+                                setIsOpen(true)
+                            }}
                             className="mt-8 inline-flex w-full sm:w-fit items-center justify-center rounded-full bg-[color:var(--gold)] px-8 py-2.5 text-[15px] font-semibold text-[color:var(--goldText)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
                             style={{ backgroundColor: BRAND.gold, color: BRAND.goldText }}
                         >
