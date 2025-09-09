@@ -1,6 +1,7 @@
 
 import React from 'react';
-import EduTradeFooterBar from '../components/footer';
+import EduTradeFooterBar from '../components/Footer';
+
 
 
 /**
