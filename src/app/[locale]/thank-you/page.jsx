@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import EduTradeFooterBar from '../components/footer';
+import EduTradeFooterBar from '../components/Footer';
 import Meta from '../components/Meta';
 import { useRouter } from "next/navigation";
 
