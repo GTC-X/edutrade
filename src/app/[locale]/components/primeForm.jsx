@@ -120,7 +120,7 @@ const PrimeForm = ({ title = 'Register Now', subtitle = '' }) => {
 
     // ====== OTP: Email ======
     const sendEmailOtp = async () => {
-        if (!EmailRegex.test(formik.values.email)) {
+        if (!EmailRegex.test(formik.values.email)) { 
             toast.error('Invalid email');
             return;
         }
