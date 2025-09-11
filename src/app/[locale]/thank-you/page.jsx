@@ -62,7 +62,7 @@ export default function ConfirmNotice({ firstName = '[FIRST NAME]', email = '[EM
           </div>
 
           {/* Background: soft chart lines & dots */}
-          <ChartBackdrop />
+          {/* <ChartBackdrop /> */}
           {/* Right white curved wedge */}
           {/* <RightCurve /> */}
 

@@ -102,7 +102,7 @@ const PrimeForm = ({ title = 'Register Now', subtitle = '' }) => {
         validationSchema: Step1Schema,
         onSubmit: async (values) => {
             try {
-                 await axios.post("https://hooks.zapier.com/hooks/catch/16420445/2nppxqi/", JSON.stringify(values));
+                 await axios.post("https://hooks.zapier.com/hooks/catch/16420445/udnjn1o/", JSON.stringify(values));
             } catch (error) {
             } finally {
                 sendDataToDb(values, formik)
