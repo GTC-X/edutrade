@@ -7,9 +7,9 @@ export async function POST(req) {
     const { email } = await req.json();
     const otp = otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false, digits: true, lowerCaseAlphabets: false });
     const mailData = {
-        from: '"GTC" <portal@mx4.gtcmail.com>',
+        from: '"Edu Trade" <portal@mx4.gtcmail.com>',
         to: email,
-        subject: "Your GTCFX OTP Code",
+        subject: "Your Edu Trade OTP Code",
         text: `Your OTP is ${otp}`,
         html: `
         <html lang="en">
@@ -50,7 +50,7 @@ export async function POST(req) {
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:10px;">
 
-Thanks again for your interest in GTC Prime.
+Thanks again for your interest in Edu Trade.
 
 
               </td>
@@ -73,12 +73,12 @@ Thanks again for your interest in GTC Prime.
             </tr>
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:10px;">
-                We hope you’re excited about the upcoming GTC Demo Trading Tournament!
+                We hope you’re excited about the upcoming Edu Trade Event!
               </td>
             </tr>
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:30px;">
-                Have a great day,<br>Your GTC Family
+                Have a great day,<br>Your Edu Trade Family
               </td>
             </tr>
             <tr><td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td></tr>

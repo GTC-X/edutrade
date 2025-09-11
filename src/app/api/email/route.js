@@ -200,7 +200,7 @@ Your Edu.trade Family
 export async function POST(req) {
     const reqBody = await req.json();
     const mailOption = {
-        from: '"GTC" <portal@mx4.gtcmail.com>',
+        from: '"Edu Trade" <portal@mx4.gtcmail.com>',
         to: reqBody?.email,
     }
     try {
