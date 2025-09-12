@@ -31,7 +31,7 @@ const page = () => {
                 />
             </div>
             <IbAgendaSection setIsOpen={setIsOpen}/>
-            <MeetSpeakersSection setIsOpen={setIsOpen}/>
+           
             <IbEventDetails setIsOpen={setIsOpen}/>
             <IbCtaBanner setIsOpen={setIsOpen}/>
             <EduTradeFooterBar setIsOpen={setIsOpen}/>
