@@ -53,8 +53,7 @@ Broker event of the year at the Museum of the Future.
             </tr>
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:10px;">
-               The event is taking place at 1pm on Saturday, 11th October 2025 
-and we’d love to see you there!
+              The <b  style="color:#662D91; font-weight: 600;">“Partners of the Future”</b> event is taking place at 1pm on Saturday, 11th October 2025 and we’d love to see you there!
               </td>
             </tr>
 
@@ -68,8 +67,7 @@ and we’d love to see you there!
 
                <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:20px;">
-Once you’ve clicked on the email verification link, our Account Managers will be in touch with you via phone. We do this because we need to ensure that everyone attending this free event is indeed an IB </td>
-            </tr>
+Our Account Managers will be in touch with you via phone. We need to call you as we’re only accepting real IBs. Therefore, we need to ensure that everyone attending this free event is indeed an Introducing Broker.            </tr>
             <tr>
  <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:20px;">
@@ -78,14 +76,13 @@ Once you’ve clicked on the email verification link, our Account Managers will 
             </tr>
  <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:20px;">
-            This is a very specialised and sought after event, and seats are extremely limited, so we can only offer them to Introducing Brokers who really do want to be shown how they can expand their business.
-            </td>
+This is a very specialised and sought after event, and seats are extremely limited, so we can only offer them to Introducing Brokers who really do want to be shown how they can expand their partnership busines            </td>
             </tr>
 
 
               <td style="font-size:14px;color:#4D4D70;padding-bottom:20px;">
-                If you need any help or assistance, simply reach out to our amazing Customer Care team via our Live Chat feature that’s on our website, 
-                <a href="https://edu.trade">https://edu.trade</a>.
+               We look forward to talking to you soon.
+              
               </td>
             </tr>
       
@@ -93,7 +90,7 @@ Once you’ve clicked on the email verification link, our Account Managers will 
               <td style="font-size:14px;color:#4D4D70;padding-bottom:30px;">
                 Have a great day,<br>
 
-Your Edu.trade Family
+<span style="color:#662D91; font-weight: 600;">Your Edu.trade Family</span>
               </td>
             </tr>
             <tr><td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td></tr>
