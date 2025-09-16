@@ -19,7 +19,7 @@ const COLOR = {
 export default function IbEventDetails({ setIsOpen }) {
     return (
         <section className="w-full" style={{ backgroundColor: COLOR.page }}>
-            <div className="mx-auto container py-12 md:py-16">
+            <div className="mx-auto container py-12 md:py-18">
                 {/* Title */}
                 <h2
                     className="text-[32px] text-center md:text-left font-semibold leading-tight text-[color:var(--p)] md:text-[40px]"
@@ -75,7 +75,7 @@ export default function IbEventDetails({ setIsOpen }) {
                         </div>
 
                         {/* Right: Image with purple tint & left divider */}
-                        <div className="relative min-h-[220px] overflow-hidden rounded-b-[8px] md:rounded-r-[8px] md:rounded-bl-none">
+                        <div className="relative min-h-[220px] overflow-hidden rounded-b-[7px] md:rounded-r-[7px] md:rounded-bl-none">
                             {/* divider line */}
                             <div className="absolute left-0 top-0 hidden h-full w-px md:block" style={{ backgroundColor: COLOR.border }} />
 

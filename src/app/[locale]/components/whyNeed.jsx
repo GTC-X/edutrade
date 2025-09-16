@@ -12,23 +12,29 @@ export default function WhyAttendIBEvent({ onCta, setIsOpen }) {
       front: 'Unlock Growth Secrets',
       back:
         'Discover proven strategies top IBs use to multiply their earnings and expand their trader base.',
+      img: "/img1.png"
+
     },
     {
       front: 'Connections That Count',
       back:
         'Build powerful relationships with industry leaders and decision-makers who open doors to bigger opportunities.',
+      img: "/img2.webp"
 
     },
     {
       front: 'Insider GCC Advantage',
       back:
         'Gain exclusive knowledge on scaling your IB business across the GCC, while maximising rebates and commissions.',
+      img: "/img4.webp"
 
     },
     {
       front: 'The Future-Ready Edge',
       back:
         'Get hands-on with advanced tools designed to give IBs an unbeatable competitive advantage.',
+      img: "/img3.webp"
+
     },
   ];
 
@@ -39,7 +45,7 @@ export default function WhyAttendIBEvent({ onCta, setIsOpen }) {
     >
       {/* subtle bg image if you have it */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-15"
+        className="pointer-events-none absolute inset-0 opacity-75"
         style={{
           backgroundImage: "url('/bg-event.svg')",
           backgroundRepeat: 'no-repeat',
@@ -49,14 +55,14 @@ export default function WhyAttendIBEvent({ onCta, setIsOpen }) {
       />
 
       <div className="relative mx-auto max-w-5xl px-4 pt-6  pb-10 md:py-16">
-        <h2 className="text-center text-[32px] md:text-[40px] font-extrabold text-[#EEDBC3]">
+        <h2 className="text-center text-[32px] md:text-[40px] font-extrabold text-[#D6B086]">
           Why You Need to be at this IB Event
         </h2>
 
         {/* Grid of flip cards */}
         <div className="mt-8 grid grid-cols-1 gap-6 md:mt-10 md:grid-cols-2 md:gap-8">
           {items.map((it, i) => (
-            <FlipCard key={i} front={it.front} back={it.back} />
+            <FlipCard key={i} front={it.front} back={it.back} img={it.img} />
           ))}
         </div>
 
@@ -76,7 +82,7 @@ export default function WhyAttendIBEvent({ onCta, setIsOpen }) {
 }
 
 /* ---------- Flip Card (pure Tailwind) ---------- */
-function FlipCard({ front, back }) {
+function FlipCard({ front, back, img }) {
   return (
     <div
       className="group outline-none"
@@ -101,6 +107,11 @@ function FlipCard({ front, back }) {
             px-8 py-10 md:px-10 md:py-12
             [backface-visibility:hidden]
           "
+          style={{
+            backgroundImage: `url(${img})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            }}
         >
           <div className="text-[18px] md:text-[22px] font-semibold leading-tight text-[#662D91]">
             {front}

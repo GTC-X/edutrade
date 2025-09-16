@@ -6,9 +6,7 @@ import { ToastContainer } from "react-toastify";
 
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   const isArabicOrKurdish = locale === "ar" || locale === "ku";
 
@@ -16,17 +14,10 @@ export default async function LocaleLayout({ children, params }) {
     <html lang={locale} dir={isArabicOrKurdish ? "rtl" : "ltr"}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        {/* Poppins for all locales */}
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
           rel="stylesheet"
         />
         <meta
@@ -44,11 +35,7 @@ export default async function LocaleLayout({ children, params }) {
           }}
         />
         <style>{`
-          body {
-            font-family: '${
-              isArabicOrKurdish ? "Noto Kufi Arabic" : "Poppins"
-            }', sans-serif;
-          }
+          body { font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
         `}</style>
       </head>
       <body>

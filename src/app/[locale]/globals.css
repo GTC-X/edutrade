@@ -77,14 +77,14 @@ body {
 
   @media (width >= 64rem) {
     max-width: 64rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   @media (width >= 80rem) {
     max-width: 1380px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   @media (width >= 96rem) {

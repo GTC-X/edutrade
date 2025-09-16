@@ -1,17 +1,22 @@
-import nodemailer from 'nodemailer';
-import { NextResponse } from 'next/server';
-import otpGenerator from 'otp-generator';
-import { transporter } from '../../config/nodemailer'
+import nodemailer from "nodemailer";
+import { NextResponse } from "next/server";
+import otpGenerator from "otp-generator";
+import { transporter } from "../../config/nodemailer";
 
 export async function POST(req) {
-    const { email } = await req.json();
-    const otp = otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false, digits: true, lowerCaseAlphabets: false });
-    const mailData = {
-        from: '"Edu Trade" <portal@mx4.gtcmail.com>',
-        to: email,
-        subject: "Your Edu Trade OTP Code",
-        text: `Your OTP is ${otp}`,
-        html: `
+  const { email } = await req.json();
+  const otp = otpGenerator.generate(6, {
+    upperCaseAlphabets: false,
+    specialChars: false,
+    digits: true,
+    lowerCaseAlphabets: false,
+  });
+  const mailData = {
+    from: '"Edu Trade" <portal@mx4.gtcmail.com>',
+    to: email,
+    subject: "Your Edu Trade OTP Code",
+    text: `Your OTP is ${otp}`,
+    html: `
          <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -113,13 +118,13 @@ Thanks again for your interest in Edu Trade.
     </table>
   </body>
 </html>
-        `
-    };
-    try {
-        await transporter.sendMail(mailData);
-        return NextResponse.json({ message: `5649${otp}632` }, { status: 200 })
-    } catch (error) {
-        console.log(error);
-        return NextResponse.json({ message: 'Error Sending OTP' }, { status: 500 })
-    }
+        `,
+  };
+  try {
+    await transporter.sendMail(mailData);
+    return NextResponse.json({ message: `5649${otp}632` }, { status: 200 });
+  } catch (error) {
+    console.log(error);
+    return NextResponse.json({ message: "Error Sending OTP" }, { status: 500 });
+  }
 }

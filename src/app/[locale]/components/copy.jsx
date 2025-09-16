@@ -15,13 +15,13 @@ const BRAND = {
   goldText: '#3D2C16',
 };
 
-export default function EduTradeHero({ ringSrc = '/banner-img.svg' }: { ringSrc?: string }) {
+export default function EduTradeHero({ ringSrc = '/banner-img.svg' }) {
   const eventDate = useMemo(() => new Date('2025-10-11T10:00:00.000Z'), []);
   const [t, setT] = useState(diff(eventDate));
   useEffect(() => { const id = setInterval(() => setT(diff(eventDate)), 1000); return () => clearInterval(id); }, [eventDate]);
 
   return (
-    <section className="w-full bg-white font-sans text-[#2E2B3A]">
+    <section className="w-full bg-white text-[#2E2B3A]">
       {/* Header: centered logo */}
       <div className="mx-auto max-w-6xl px-4 pt-6">
         <div className="flex items-center justify-center"><Logo /></div>
@@ -33,16 +33,14 @@ export default function EduTradeHero({ ringSrc = '/banner-img.svg' }: { ringSrc?
           {/* Left copy */}
           <div className="md:pr-6">
             <h1 className="text-[34px] leading-[1.08] font-extrabold tracking-tight text-[color:var(--h)] md:text-[46px]" style={{ ['--h' as any]: BRAND.purple }}>
-              Turn Your IB Business into
-              <br className="hidden md:block" />
-              <span className="block">a Revenue Machine</span>
-            </h1>
+              Turn Your IB Business into a Revenue Machine
+             </h1>
             <p className="mt-4 max-w-[620px] text-[14.5px] leading-[1.75] text-[color:var(--body)] md:mt-5 md:text-[15px]" style={{ ['--body' as any]: BRAND.body }}>
               At Edu.trade’s premier Introducing Broker event at The Museum of the Future in Dubai, you’ll learn how top GCC Introducing Brokers are multiplying their commissions, winning more traders, and locking in long‑term growth. If you’re serious about scaling your IB business, this is where it starts.
             </p>
             <button
               className="mt-7 inline-flex items-center justify-center rounded-full bg-[color:var(--gold)] px-7 py-3.5 text-[15px] font-semibold text-[color:var(--goldText)] shadow-[0_8px_18px_rgba(0,0,0,.10)] transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[color:var(--gold)]/50"
-              style={{ ['--gold' as any]: BRAND.gold, ['--goldText' as any]: BRAND.goldText }}
+              style={{ ['--gold']: BRAND.gold, ['--goldText']: BRAND.goldText }}
             >
               Book My Seat
             </button>

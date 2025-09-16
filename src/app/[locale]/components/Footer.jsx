@@ -27,7 +27,7 @@ export default function EduTradeFooterBar() {
           </div>
 
           {/* Right: copyright */}
-          <div className="text-[16px] font-semibold leading-none text-white">
+          <div className="text-[16px] font-medium leading-none text-white">
             © {new Date()?.getFullYear()} — Copyright
           </div>
         </div>

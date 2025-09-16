@@ -21,17 +21,15 @@ export default function IbCtaBanner({
     setIsOpen
 }) {
     return (
-        <section className="relative w-full overflow-hidden min-h-[390px] flex items-center">
-            {/* Background image */}
-            <div
-                className="pointer-events-none absolute right-0 bottom-0 h-full w-full "
-                style={{
+        <section className="relative w-full overflow-hidden min-h-[390px] flex items-center"
+           style={{
                     backgroundImage: "url('/bg-last.png')",
                     backgroundSize: "100% 100%",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center bottom",
                 }}
-            />
+        >
+          
             {/* Content */}
             <div className="mx-auto container relative py-12 md:py-12">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 items-center">

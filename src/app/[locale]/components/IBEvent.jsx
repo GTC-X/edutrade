@@ -66,7 +66,7 @@ export default function IbAgendaSection({ setIsOpen }) {
       <BackdropWave />
       <CandlesBackdrop />
 
-      <div className="relative mx-auto max-w-7xl px-4 py-10 md:py-14">
+      <div className="relative mx-auto max-w-7xl px-4 py-10 md:py-16">
         {/* Heading */}
         <div className="text-center">
           <h2
