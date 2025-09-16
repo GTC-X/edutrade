@@ -112,7 +112,7 @@ Thanks again for your interest in Edu Trade.
   </td>
 </tr>
 
-          </table>
+          </table>   
         </td>
       </tr>
     </table>
