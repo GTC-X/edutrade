@@ -30,8 +30,8 @@ const generateEmailContent = (data) => {
             </tr>
             <tr>
               <td align="center" style="font-size:18px;color:#000;padding-bottom:20px; font-weight: 600">
-             Thanks for showing an interest in attending the IB event at the 
-Museum of the Future in Dubai. <br>Simply confirm your email.
+             Thanks for showing an interest in attending the IB event<br> at the 
+Museum of the Future in Dubai. Simply confirm your email.
               </td>
             </tr>
             <tr><td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td></tr>
@@ -53,7 +53,7 @@ Broker event of the year at the Museum of the Future.
             </tr>
             <tr>
               <td style="font-size:14px;color:#4D4D70;padding-bottom:10px;">
-              The <b  style="color:#662D91; font-weight: 600;">“Partners of the Future”</b> event is taking place at 1pm on Saturday, 11th October 2025 and we’d love to see you there!
+              The <b  style="color:#662D91; font-weight: 600;">“Partners of the Future”</b> event is taking place at 1pm on Saturday, 13th October 2025 and we’d love to see you there!
               </td>
             </tr>
 
