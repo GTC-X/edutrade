@@ -84,10 +84,7 @@ export default function WhyAttendIBEvent({ onCta, setIsOpen }) {
 /* ---------- Flip Card (pure Tailwind) ---------- */
 function FlipCard({ front, back, img }) {
   return (
-    <div
-      className="group outline-none"
-      tabIndex={0} // focusable for keyboard flip
-    >
+    <div className="group outline-none" tabIndex={0}>
       <div
         className="
           relative h-[200px] md:h-[220px] w-full rounded-[16px]
@@ -106,14 +103,19 @@ function FlipCard({ front, back, img }) {
             bg-white text-center flex items-center justify-center
             px-8 py-10 md:px-10 md:py-12
             [backface-visibility:hidden]
+            overflow-hidden
           "
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            }}
         >
-          <div className="text-[18px] md:text-[22px] font-semibold leading-tight text-[#662D91]">
+          {/* Background image only on md+ */}
+          <div
+            className="hidden md:block absolute inset-0 rounded-[16px] bg-no-repeat bg-cover"
+            style={{ backgroundImage: img ? `url(${img})` : undefined }}
+            aria-hidden
+          />
+          {/* Optional subtle overlay for readability (md+). Remove if not needed */}
+          {/* <div className="hidden md:block absolute inset-0 bg-black/5 rounded-[16px]" aria-hidden /> */}
+
+          <div className="relative z-10 text-[18px] md:text-[22px] font-semibold leading-tight text-[#662D91]">
             {front}
           </div>
         </div>
@@ -135,3 +137,5 @@ function FlipCard({ front, back, img }) {
     </div>
   );
 }
+
+ 

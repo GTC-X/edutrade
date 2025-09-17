@@ -44,7 +44,7 @@ export default function EduTradeHero({
                             </h1>
 
                             <p
-                                className="mt-4 md:mt-5 hidden md:block max-w-[560px] text-[14.5px] leading-[1.75] text-[color:var(--body)]"
+                                className="mt-4 md:mt-5 hidden md:block max-w-[560px] text-[16px] leading-[1.75] text-[color:var(--body)]"
                                 style={{ ["--body"]: BRAND.body }}
                             >
                                 At Edu.trade’s premier Introducing Broker event at The Museum of
@@ -150,7 +150,7 @@ export default function EduTradeHero({
                             At the Museum of the Future, Saturday, 11th October 2025
                         </p>
 
-                        <div className="mt-8 md:mt-10 grid grid-cols-4 gap-6 md:gap-12">
+                        <div className="mt-8 md:mt-10 grid grid-cols-4 gap-2 md:gap-12">
                             <TimeStat value={t.days} label="DAYS" />
                             <TimeStat value={t.hours} label="HOURS" />
                             <TimeStat value={t.minutes} label="MINUTES" />
@@ -168,12 +168,12 @@ function TimeStat({ value, label }) {
     return (
         <div className="text-center">
             <div
-                className="text-[34px] md:text-[44px] font-extrabold leading-none text-[color:var(--goldLight)]"
+                className="text-[34px] md:text-[60px] font-extrabold leading-none text-[color:var(--goldLight)]"
                 style={{ ["--goldLight"]: BRAND.goldLight }}
             >
                 {String(value).padStart(2, "0")}
             </div>
-            <div className="mt-2 text-[10px] md:text-[12px] uppercase tracking-[0.35em] text-[#F3E3FF]">
+            <div className="mt-2 text-[12px] md:text-[20px] uppercase tracking-[0.35em] text-[#F3E3FF]">
                 {label}
             </div>
         </div>
