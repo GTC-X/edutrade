@@ -36,7 +36,7 @@ Museum of the Future in Dubai. Simply confirm your email.
             </tr>
             <tr><td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td></tr>
             <tr>
-              <td style="font-size:14px;color:#4D4D70;padding-bottom:10px;">
+              <td style="font-size:14px;color:#4D4D70;padding-bottom:10px;">  
                 Dear ${data?.first_name || "Client"},
               </td>
             </tr>
