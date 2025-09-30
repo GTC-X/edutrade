@@ -42,8 +42,6 @@ const page = () => {
           className="w-full  h-[460px] object-cover cursor-pointer"
         />
       </div>
-      <IbAgendaSection setIsOpen={setIsOpen} />
-
       <IbEventDetails setIsOpen={setIsOpen} />
       <IbCtaBanner setIsOpen={setIsOpen} />
       <EduTradeFooterBar setIsOpen={setIsOpen} />
