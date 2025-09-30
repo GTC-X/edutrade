@@ -39,7 +39,7 @@ const page = () => {
           width={200}
           height={72}
           alt="GTCFX"
-          className="w-full  h-[460px] object-cover cursor-pointer"
+          className="w-full h-[460px] object-cover cursor-pointer"
         />
       </div>
       <IbEventDetails setIsOpen={setIsOpen} />
